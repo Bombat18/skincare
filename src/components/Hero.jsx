@@ -1,6 +1,6 @@
 import React from 'react'
 import product from '../assets/image/product.jpg'
-import model1 from '../assets/image/model1.png'
+import model1 from '../assets/image/Model1.png'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
