@@ -45,5 +45,4 @@ A responsive and modern skincare product landing page built with **React** and *
    ```bash
    npm run build
    ```
-
----
+````
