@@ -1,16 +1,11 @@
-
-
-```markdown
 # Skincare Product Website 🌿
 
 A responsive and modern skincare product landing page built with **React** and **Vite**, featuring smooth UI, optimized builds, and Netlify deployment.
 
 ## 🚀 Live Demo
 
-👉 [View Live Site](https://github.com/Bombat18/skincare)  
-(Replace this URL with your actual Netlify site link)
-
----
+👉 [View Live Site](https://your-site-name.netlify.app)  
+*(Replace this with your actual Netlify URL)*
 
 ---
 
@@ -29,6 +24,8 @@ A responsive and modern skincare product landing page built with **React** and *
    ```bash
    git clone https://github.com/Bombat18/skincare.git
    cd skincare
+
+   
 ````
 
 2. **Install dependencies**
@@ -50,4 +47,3 @@ A responsive and modern skincare product landing page built with **React** and *
    ```
 
 ---
-
