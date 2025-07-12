@@ -4,7 +4,7 @@ A responsive and modern skincare product landing page built with **React** and *
 
 ## 🚀 Live Demo
 
-👉 [View Live Site](https://your-site-name.netlify.app)  
+👉 [View Live Site](https://skincareramya.netlify.app)  
 *(Replace this with your actual Netlify URL)*
 
 ---
