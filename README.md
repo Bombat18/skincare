@@ -1,12 +1,53 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+```markdown
+# Skincare Product Website 🌿
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A responsive and modern skincare product landing page built with **React** and **Vite**, featuring smooth UI, optimized builds, and Netlify deployment.
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [View Live Site](https://github.com/Bombat18/skincare)  
+(Replace this URL with your actual Netlify site link)
+
+---
+
+---
+
+## ⚙️ Tech Stack
+
+- ⚛️ **React** – Component-based UI
+- ⚡ **Vite** – Lightning-fast bundler
+- 🎨 **Tailwind CSS** – Utility-first styling
+- 🌍 **Netlify** – Easy continuous deployment
+
+---
+
+## 🧪 Getting Started
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/Bombat18/skincare.git
+   cd skincare
+````
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+---
+
