@@ -25,24 +25,32 @@ A responsive and modern skincare product landing page built with **React** and *
    git clone https://github.com/Bombat18/skincare.git
    cd skincare
 
-   
+
+
+---
+
+### 1. Install dependencies
+
+```bash
+npm install
 ````
 
-2. **Install dependencies**
+### 2. Start the development server
 
-   ```bash
-   npm install
-   ```
+```bash
+npm run dev
+```
 
-3. **Start the development server**
+### 3. Build for production
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run build
+```
 
-4. **Build for production**
+```
 
-   ```bash
-   npm run build
-   ```
-````
+---
+
+
+```
+
