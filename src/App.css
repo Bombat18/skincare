@@ -1,0 +1,26 @@
+.split-word {
+  font-size: 1rem; /* base for mobile */
+  line-height: 1.8;
+  display: inline-block;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .split-word {
+    font-size: 1.8rem; /* 26px */
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .split-word {
+    font-size: 1.875rem; /* 30px */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .split-word {
+    font-size: 2.25rem; /* 36px */
+  }
+}
