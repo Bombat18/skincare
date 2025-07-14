@@ -13,16 +13,45 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
+    const handleImageLoad = () => {
+      const images = document.querySelectorAll('img');
+      let loadedCount = 0;
+
+      const onImageLoad = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setLoading(false);
+        }
+      };
+
+      if (images.length === 0) {
+        // No images at all
+        setLoading(false);
+        return;
+      }
+
+      images.forEach((img) => {
+        if (img.complete) {
+          onImageLoad();
+        } else {
+          img.addEventListener('load', onImageLoad);
+          img.addEventListener('error', onImageLoad);
+        }
+      });
+
+      // Cleanup
+      return () => {
+        images.forEach((img) => {
+          img.removeEventListener('load', onImageLoad);
+          img.removeEventListener('error', onImageLoad);
+        });
+      };
     };
 
-    // Add listener for full load (including images)
-    window.addEventListener('load', handleLoad);
+    // Wait until next tick so DOM + images from components are mounted
+    const timeoutId = setTimeout(handleImageLoad, 0);
 
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
+    return () => clearTimeout(timeoutId);
   }, []);
 
   if (loading) {
