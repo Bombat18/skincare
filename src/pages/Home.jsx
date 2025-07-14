@@ -13,36 +13,16 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleImagesLoaded = () => {
-      const images = document.querySelectorAll('img');
-      let loadedCount = 0;
-
-      images.forEach((img) => {
-        if (img.complete) {
-          loadedCount++;
-        } else {
-          img.onload = () => {
-            loadedCount++;
-            if (loadedCount === images.length) {
-              setLoading(false);
-            }
-          };
-          img.onerror = () => {
-            loadedCount++;
-            if (loadedCount === images.length) {
-              setLoading(false);
-            }
-          };
-        }
-      });
-
-      if (loadedCount === images.length) {
-        setLoading(false);
-      }
+    const handleLoad = () => {
+      setLoading(false);
     };
 
-    // Wait for DOM to render
-    setTimeout(handleImagesLoaded, 100); // small delay to ensure images are in DOM
+    // Add listener for full load (including images)
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
   }, []);
 
   if (loading) {
